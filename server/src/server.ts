@@ -27,6 +27,6 @@ app.listen({
     port: DEFAULT_LISTENING_PORT,
 }).then(() =>
     console.log(
-        `The server is running on http://localhost:${DEFAULT_LISTENING_PORT}/`
+        `The server is running on: http://localhost:${DEFAULT_LISTENING_PORT}/`
     )
 )
