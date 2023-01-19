@@ -9,16 +9,18 @@ const prisma = new PrismaClient()
 app.register(cors)
 
 app.get("/", async () => {
-    const habits = await prisma.habit.findMany({
-        where: {
-            title: {
-                startsWith: "Beber",
-            },
-        },
-    })
+    // const habits = await prisma.habit.findMany({
+    //     where: {
+    //         title: {
+    //             startsWith: "Beber",
+    //         },
+    //     },
+    // })
 
     // para retornar todos os registros de habit, bastaria não passar nenhum parâmetro para o findMany:
     // const habits = await prisma.habit.findMany()
+
+    const habits = await prisma.habit.findMany()
 
     return habits
 })
