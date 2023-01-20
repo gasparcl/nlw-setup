@@ -8,6 +8,7 @@ import {
     Inter_800ExtraBold,
 } from "@expo-google-fonts/inter"
 
+import { Home } from "./src/screens/Home/index"
 import { Loader } from "./src/components/Loader"
 
 export default function App() {
@@ -24,9 +25,7 @@ export default function App() {
 
     return (
         <View style={styles.container}>
-            <Text style={styles.text}>
-                Open up App.tsx to start working on your app!
-            </Text>
+            <Home />
             <StatusBar
                 barStyle="light-content"
                 backgroundColor="transparent"
@@ -42,9 +41,5 @@ const styles = StyleSheet.create({
         backgroundColor: "#09090A",
         alignItems: "center",
         justifyContent: "center",
-    },
-    text: {
-        color: "rgba(255,255,255,.87)",
-        fontFamily: "Inter_800ExtraBold",
     },
 })
