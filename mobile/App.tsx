@@ -1,5 +1,5 @@
 import React from "react"
-import { StyleSheet, Text, View, StatusBar } from "react-native"
+import { StyleSheet, View, StatusBar } from "react-native"
 import {
     useFonts,
     Inter_400Regular,
@@ -7,6 +7,7 @@ import {
     Inter_700Bold,
     Inter_800ExtraBold,
 } from "@expo-google-fonts/inter"
+import "./src/lib/dayjs"
 
 import { Home } from "./src/screens/Home/index"
 import { Loader } from "./src/components/Loader"
